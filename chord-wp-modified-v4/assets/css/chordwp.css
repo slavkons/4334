@@ -1,0 +1,219 @@
+.chordwp-column {
+  float: left;
+  display: block;
+  min-width: 290px;
+  margin-right: 10px;
+}
+
+.chordwp-clearfix {
+  margin-top: 25px;
+  clear: both;
+}
+
+table.verse-line,
+table.verse-line tr,
+table.verse-line tr td {
+  border: none;
+  width: auto;
+  padding: 0px 0.25em 0px 0px;
+  margin: 0px;
+  line-height: 1em;
+}
+
+table.verse-line {
+  margin-bottom: 10px;
+}
+
+table.verse-line td.chords {
+  font-weight: bold;
+  padding-bottom: 0px;
+  margin-bottom: 0px;
+}
+
+table.verse-line tr td.lyrics {
+  line-height: 1.2em;
+}
+
+h1.song-title {
+  font-size: 1.2em;
+}
+
+p.lyrics {
+  padding: 0px 0px 0px 0px;
+  margin: 20px 0px 5px 0px;
+}
+
+.chorus {
+  margin: 25px 0px;
+  border-left: 3px solid #454545;
+  padding-left: 15px;
+}
+
+.directive {
+  display: block;
+  font-size: 0.9em;
+  padding: 0px 20px 0px 0px;
+  margin: 0px;
+  opacity: 0.7;
+}
+
+.comment-italic {
+  font-size: 0.9em;
+  padding: 10px 0px 0px 0px;
+  margin: 0px;
+  opacity: 0.7;
+}
+
+.comment-italic {
+  font-style: italic;
+}
+
+.comment-box {
+  border: 1px solid #CCCCCC;
+  padding: 2px 5px;
+  background-color: #EEEEEE;
+}
+
+
+/* ------------------------------- */
+/* CUSTOM */
+.chwp-lyrics-row {
+  display: flex;
+  font-family: 'Enriqueta', sans-serif !important;
+  font-size: 1.1em;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.chwp-chord-lyrics-wrapper {
+  vertical-align: top;
+  display: inline-flex;
+  flex-direction: column;
+  align-items: flex-start;
+  overflow: hidden;
+  position: relative;
+  float: left;
+  overflow: visible;
+}
+
+.chwp-lyrics {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  align-self: stretch;
+  line-height: 1.5em;
+  margin-bottom: 0.1em;
+}
+
+.chwp-chord-wrapper {
+  display: flex;
+}
+
+.chwp-chord {
+  display: flex;
+  font-weight: 700;
+  background-color: rgba(54, 218, 83, 0.3);
+  border-radius: 2px;
+  font-size: 15px;
+  padding: .1em 0 .1em .2em;
+  margin-right: 0.1em;
+  margin-bottom: -0.3em;
+  line-height: 1em;
+  vertical-align: super;
+  font-family: "Open Sans", Helvetica, Arial, sans-serif;
+  font-style: normal;
+}
+
+/* this is nasty hack to keep chords always non-italic */
+.chwp-chord i {
+  font-style: normal;
+}
+
+.chwp-lyrics .chwp-words {
+  display: flex;
+}
+
+.chwp-lyrics .chwp-word-separator {
+  display: flex;
+  flex-grow: 1;
+  justify-content: center;
+}
+
+.chwp-lyrics .chwp-word-separator .chwp-flexible-dash {
+  display: flex;
+  height: .3em;
+  border-bottom: 1px solid black;
+  flex-grow: 0.8;
+  flex-basis: .2em;
+}
+
+.chwp-chord-lyrics-wrapper.chwp-chord-hidden .chwp-chord {
+  display: none !important;
+}
+
+.chwp-chord-lyrics-wrapper.chord-hidden .chwp-word-separator {
+  display: none;
+}
+
+.chwp-chord-hidden .chwp-lyrics:empty {
+  margin-bottom: 0;
+}
+
+.chwp-no-chords-in-line .chwp-chord {
+    display: none;
+}
+
+.chwp-empty-chord {
+    background: transparent;
+    color: transparent;
+    width: 0 !important;
+    margin-right: 0em !important;
+    margin-left: 0 !important;
+    padding-right: 0 !important;
+    padding-left: 0 !important;
+}
+
+.chwp-empty-chord:after {
+    /*content: "-";*/
+}
+
+.chwp-no-lyrics-in-line .chwp-chord, .chwp-no-lyrics-inside .chwp-chord {
+    margin-bottom: .1em;
+}
+
+.chwp-comment {
+  font-family: 'Montserrat', "Helvetica Neue", Helvetica, Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  font-weight: 500;
+  margin: 0 !important;
+  text-transform: uppercase;
+  transition: all ease 0.3s;
+  color: #bbb;
+  font-size: 14px;
+}
+
+.chwp-lyrics-row-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: nowrap;
+}
+
+.chwp-lyrics-row-side {
+  display: flex;
+  flex-grow: 1;
+  flex-basis: 1em;
+}
+
+.chwp-lyrics-row-side.chwp-side-left {
+    justify-content: flex-end;
+}
+
+.font-italic {
+  font-style: italic !important;
+}
+
+.chwp-line {
+  border-bottom: 1px solid #cccccc;
+}
